@@ -1,0 +1,226 @@
+@media (min-width: 800px) {
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .grid_2-1 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .grid_5-3 {
+      display: grid;
+      grid-template-columns: 5fr 3fr;
+      gap: 15px;
+    }
+    .grid_2-3 {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+    }
+    .grid_3-2 {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+    }
+    .ikkeal {
+      margin-left: 20px;
+      margin-right: 5px;
+      margin-bottom: 30px;
+    }
+    .hvistab {
+      margin-left: 38px;
+    }
+  
+    #tablet {
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
+    .win {
+      margin-right: 5px;
+      margin-top: -7px;
+    }
+    .wind {
+      width: 300px;
+      margin-bottom: -20px;
+      margin-top: 20px;
+    }
+  
+    .hundm {
+      width: 300px;
+    }
+    .tapl {
+      width: 300px;
+    }
+    #kol {
+      margin-bottom: 3px;
+    }
+    .colorder {
+      order: -1;
+    }
+    .order {
+      order: 3;
+    }
+    .dd {
+      margin-right: 15px;
+    }
+    .dt {
+      margin-right: 15px;
+    }
+    .billede2 {
+      width: 100%;
+    }
+    #mand {
+      margin-top: 30px;
+      margin-bottom: 120px;
+      width: 500px;
+      margin-right: 20px;
+    }
+    #etsite {
+      margin-bottom: 75px;
+    }
+    #mincomputer {
+      font-size: 30px;
+      margin-top: 320px;
+      margin-left: 120px;
+      padding: 10px;
+    }
+    #dummy {
+      margin-left: -3px;
+      width: 450px;
+      margin-top: 25px;
+    }
+    li {
+      list-style-type: none;
+    }
+  
+    #speci {
+      margin-top: 35px;
+    }
+  
+    .grid_1-1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .grid_1-1-1-1 img {
+      align-self: stretch;
+      object-fit: cover;
+    }
+    .bil1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+    .mobil {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column: 3 / span 2;
+      gap: 5px;
+    }
+    .bil4 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .bil5 {
+      grid-column: 3 / span 2;
+      grid-row: 2;
+    }
+    .bil6 {
+      grid-column: 2 / span 4;
+      grid-row: 3;
+    }
+    .billede {
+      margin: 0px;
+    }
+    .grid_1-1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .flex_col {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex_col > :last-child {
+      margin-top: auto;
+    }
+    .billede {
+      padding: 0;
+      margin: 0;
+    }
+    .bund {
+      padding: 0;
+      margin: 0;
+    }
+    #hejigen {
+      padding: 0;
+      margin: 0;
+    }
+    #hej {
+      padding: 0;
+      margin: 0;
+    }
+    #hejign {
+      padding: 0;
+      margin: 0;
+    }
+    .line-1 {
+      height: 1.5px;
+      background: #688b58;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .footer {
+      font-size: 15px;
+    }
+    #galleri {
+      margin-bottom: 10px;
+    }
+    #vig {
+      margin-bottom: 3px;
+    }
+    #udseende {
+      margin-bottom: 10px;
+    }
+    #vildt {
+      margin-bottom: 10px;
+    }
+    .pro4 {
+      margin-bottom: -10px;
+    }
+    #hjemmet {
+      margin-bottom: 0px;
+    }
+    #overskrift {
+      margin-bottom: 0px;
+    }
+    #types {
+      margin-bottom: 0px;
+      margin-top: 12px;
+    }
+    #speci {
+      margin-bottom: 0px;
+    }
+    #luft {
+      margin-bottom: 2px;
+    }
+    #vand {
+      margin-bottom: 2px;
+    }
+    #mother {
+      margin-bottom: 2px;
+    }
+  }
+  
+  .mobil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  

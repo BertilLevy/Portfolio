@@ -1,0 +1,52 @@
+h1, h2, p{
+    font-family: 'Lemonada', cursive;
+    color: burlywood;
+}
+
+
+
+#wrapper {max-width: 960px ;
+    margin: 0 auto 10px auto;
+    font-family: "lemonada" ;
+    }
+
+    /*if someone ever comes up to me with a gun, and tells me to use flexbox, just bury me there*/
+
+    article{
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    h1{
+        font-size: 100px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        justify-content: space-around; /*Lmao just give them all space around*/
+        display: flex;
+    }
+
+    h2{
+        display: flex;
+        justify-content: center; /*?????*/
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    ul{
+        justify-content: space-around;
+        display: flex;
+        background-color: forestgreen;
+    }
+
+    body{
+        background-image: url("images/background.jpg"); /*why not work???*/
+        background-color: burlywood;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }

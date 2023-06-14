@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Game</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body { font-family: sans-serif; }
+      #container { position: relative; width: 400px; height: 400px; margin: 0 auto; }
+      .falling-item { position: absolute; font-size: 30px; }
+      .good-item { color: green; }
+      .bad-item { color: red; }
+      #points { position: absolute; top: 10px; left: 10px; font-size: 20px; }
+      #life { position: absolute; top: 10px; right: 10px; font-size: 20px; }
+      #time { position: absolute; bottom: 10px; right: 10px; font-size: 20px; }
+      #gameover { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); color: white; text-align: center; }
+      #gameover h1 { margin-top: 50px; }
+      #victory { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); color: white; text-align: center; }
+      #victory h1 { margin-top: 50px; }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="points">Points: 0</div>
+      <div id="life">Life: 3</div>
+      <div id="time">Time: <span id="time-value">30</span>s</div>
+      <div id="gameover">
+        <h1>Game Over</h1>
+        <p>Your score: <span id="final-score"></span></p>
+      </div>
+      <div id="victory">
+        <h1>Victory!</h1>
+        <p>Your score: <span id="final-score"></span></p>
+      </div>
+    </div>
+    <script>
+      const container = document.getElementById('container');
+      const pointsDisplay = document.getElementById('points');
+      const lifeDisplay = document.getElementById('life');
+      const timeDisplay = document.getElementById('time-value');
+      const gameOverScreen = document.getElementById('gameover');
+      const victoryScreen = document.getElementById('victory');
+      const finalScoreDisplay = document.getElementById('final-score');
+      const itemSpeed = 3; // pixels per frame
+      const goodItems = ['😀', '😍', '🌈', '🍦', '🎁'];
+      const badItems = ['😈', '💩', '👹', '🐍', '🔥'];
+      let points = 0;
+      let life = 3;
+      let time = 30;
+      let timerId = null;
+      let gameOver = false;
+      let victory = false;
+      
+      function startGame() {
+        timerId = setInterval(() => {
+          time--;
+          timeDisplay.innerText = time + 's';
+          if (time <= 0) {
+            endGame();
+            victory = true;
+            victoryScreen.style.display = 'block';
+          }
+        }, 1000);
+        container.addEventListener('click', (event) => {
+          if (gameOver || victory) {
+            return;
+          }
+          const target = event.target;
+          if (target.classList.contains('falling-item')) {
+            const isGood = target.classList.contains('good-item');
+            target.parentNode.removeChild(target);
+            if (isGood) {
+              points++;
+              pointsDisplay.innerText = 'Points: ' + points;
+            } else {
+              life--;
+              lifeDisplay.innerText = 'Life: ' + life;
+              if (life <= 0) {
+                endGame();
+                gameOverScreen.style.display = 'block';
+              }
+            }
+          }
+        });
+        spawnItem();
+      }
+      
+      function spawnItem() {
+        const item = document.createElement('div');
+        item.classList.add('falling-item');
+        const isGood = Math.random() < 0.5;
+        if (isGood) {
+          item.classList.add('good-item');
+          item.innerText = goodItems[Math.floor(Math.random() * goodItems.length)];
+        } else {
+          item.classList.add('bad-item');
+          item.innerText = badItems[Math.floor(Math.random() * badItems.length)];
+        }
+        item.style.top = '-50px';
+        item.style.left = Math.random() * (container.offsetWidth - item.offsetWidth) + 'px';
+        container.appendChild(item);
+        const intervalId = setInterval(() => {
+          const itemTop = parseInt(item.style.top) + itemSpeed;
+          if (itemTop > container.offsetHeight) {
+            clearInterval(intervalId);
+            if (!gameOver && !victory) {
+              if (item.classList.contains('good-item')) {
+                life--;
+                lifeDisplay.innerText = 'Life: ' + life;
+                if (life <= 0) {
+                  endGame();
+                  gameOverScreen.style.display = 'block';
+                }
+              }
+              spawnItem();
+            }
+          } else {
+            item.style.top = itemTop + 'px';
+          }
+        }, 16);
+      }
+      
+      function endGame() {
+        clearInterval(timerId);
+        gameOver = true;
+      }
+      
+      startGame();
+    </script>
+  </body>
+</html>

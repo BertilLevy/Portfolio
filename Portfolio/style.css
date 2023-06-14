@@ -1,0 +1,91 @@
+.me{
+max-width: 30%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 80px;
+display: block;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+border-radius: 10%;
+border: 5px solid #ddd;
+}
+
+.sex{
+text-align: center;
+font-size: 64px;
+letter-spacing: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 400;
+margin: 10px;
+color: white;
+margin-top: 30px;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+}
+
+.sexo{
+text-align: center;
+color: white;
+font-weight: 400;
+margin-top: 20px;
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+}
+
+body{
+    background-color: gray;
+    background-image: url(assets/rona.png);
+    background-repeat: no-repeat;
+}
+
+.box_1-2{
+    display: grid;
+    grid-template-columns: 50% 1% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding-top: 50px;
+    margin-top: 150px;
+    background-color: bisque;
+}
+
+.thumbnail{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.border{
+    border: 2px solid lightskyblue;
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    margin-bottom: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fill{
+    border: 1px solid black;
+}
+
+.sex1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.c{
+    margin-left: 30%;
+}
+
+.paddle{
+    padding: 30px 30px 30px 30px;
+}

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .Raleway {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  
+  #overskrift {
+    font-size: 50px;
+    margin-bottom: -7px;
+    font-weight: bolder;
+    margin-left: -1px;
+  }
+  
+  .trykker {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+  }
+  
+  body {
+    background-color: bisque;
+  }
+  
+  .header {
+    margin-left: -20px;
+    margin-bottom: 30px;
+  }
+  
+  .main {
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .maingal {
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  
+  #etsite {
+    margin-bottom: 30px;
+  }
+  
+  .billede {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  #dummy {
+    padding-bottom: 10px;
+  }
+  
+  #hjemmet {
+    margin-bottom: -7px;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: 1000;
+  }
+  #vildt {
+    margin-top: -5px;
+  }
+  #speci {
+    margin-bottom: -7px;
+    margin-top: 15px;
+  }
+  #mincomp {
+    margin-bottom: -5px;
+  }
+  #typesp {
+    margin-bottom: -7px;
+  }
+  #types {
+    margin-bottom: -7px;
+  }
+  #tablet {
+    margin-bottom: -7px;
+  }
+  .dd {
+    margin-left: auto;
+    margin-bottom: 12px;
+  
+    align-items: center;
+    border: 9px solid #54428e;
+    background-color: #54428e;
+    color: aliceblue;
+  }
+  
+  .dt {
+    font-size: 20px;
+    margin-bottom: 12px;
+  
+    border: 5px solid #8963ba;
+    background-color: #8963ba;
+    color: aliceblue;
+    align-items: center;
+  }
+  
+  #niudti {
+    margin-bottom: 30px;
+  }
+  
+  #vig {
+    margin-top: 15px;
+    margin-bottom: -4px;
+    padding-top: 5px;
+  }
+  #kol {
+    margin-bottom: -12px;
+    padding-top: 5px;
+  }
+  
+  #luft {
+    margin-bottom: -4px;
+  }
+  #vand {
+    margin-top: 15px;
+    margin-bottom: -4px;
+    padding-top: 5px;
+  }
+  #mother {
+    margin-top: 15px;
+    margin-bottom: -5px;
+    padding-top: 5px;
+  }
+  #kompo {
+    margin-bottom: -3px;
+  }
+  .line-1 {
+    height: 1.5px;
+    background: #688b58;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .line-2 {
+    height: 1.5px;
+    background: #688b58;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .line-3 {
+    height: 1.5px;
+    background: #688b58;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hej {
+    margin-top: 15px;
+    padding-top: 9px;
+  }
+  #hejigen {
+    margin-top: 15px;
+    padding-top: 9px;
+  }
+  #hejign {
+    margin-top: 15px;
+    padding-top: 9px;
+  }
+  
+  #mand {
+    margin-top: 20px;
+  }
+  
+  #udseende {
+    margin-bottom: -5px;
+  
+    font-size: 30px;
+  }
+  #galleri {
+    font-size: 50px;
+    margin-bottom: -30px;
+  }
+  #bund {
+    padding-bottom: 15px;
+  }
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  header .logo a {
+    font-size: 2rem;
+    font-family: Raleway;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    gap: 30px;
+    overflow-x: auto;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #5e6b74;
+  }
+  a:hover {
+    color: #252d38;
+  }
+  @media (max-width: 700px) {
+    header {
+      display: none;
+    }
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+  }
+  
